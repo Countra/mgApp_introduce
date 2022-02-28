@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <header>
+            <a href="#" class="logo">CountRa</a>
+        </header>
+        <img src="assets/bg.png">
+        <div class="content" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px">
+            <h2>mgApp 项目介绍（v2）</h2>
+            <p>一个基于微软OneDrive网盘的文件管理程序，支持服务器端对网盘端的上传管理。</p>
+        </div>
+    </div>
+    <!-- About -->
+    <section class="about">
+        <div class="contentBx">
+            <h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">
+                项目核心技术栈
+            </h2>
+            <p class="text" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;">
+                后端: Flask 前端: jQuery <br><br>
+                生产环境:<br>WSGI: gunicorn<br>数据库: MySQL, SQLite 缓存数据库: Redis<br>
+                Web服务器: Nginx<br>CDN: CloudFlare
+
+            </p>
+        </div>
+        <div class="imgBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:200px;">
+            <ul>
+                <h1>核心功能模块一: onedrive目录列表</h1>
+                <li>支持添加多个微软账号，切换不同微软账号</li>
+                <li>网盘目录结构浏览</li>
+                <li>项目下载、收藏、重命名、复制、删除</li>
+                <li>全类型文件预览 (优化office类型文件预览)</li>
+                <li>放映厅模式：视频列表在线播放，选择字幕，自动载入字幕，自动播放下一集</li>
+                <li>视频播放可以调用本地软件, Windows平台支持PotPlayer, macOS平台支持IINA，移动端平台支持VLC</li>
+                <li>文件上传，支持选择上传文件/文件夹，粘贴上传文件，拖拽上传文件/文件夹</li>
+                <li>支持大文件上传</li>
+                <li>上传进度可视化</li>
+                <li>上传文件预览/重命名 (目前支持图片类型文件预览内容)</li>
+                <li>音频播放，上/下一首，播放进度调整，自动播放</li>
+                <li>照片墙功能</li>
+                <li>项目位置移动，支持选择文件夹移动，拖拽移动</li>
+                <li>批量操作：批量下载、复制直链、批量删除、批量移动</li>
+                <li>支持文件打包下载（支持文件夹）</li>
+                <li>项目搜索</li>
+                <li>目录树导航</li>
+                <li>收藏夹</li>
+                <li>文件分享 包括：创建不同类型的共享链接，邀请指定用户共享文件，管理共享信息</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="services">
+        <h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">
+            核心功能模块二: 服务端文件上传网盘
+        </h2>
+        <p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:1;right:500px;">
+            服务器单文件上传<br>
+            服务器文件夹上传<br>
+            支持大文件切片上传<br>
+            支持上传文件时选择是否覆盖或跳过同名文件<br>
+            上传进度可视化<br>
+            上传历史记录查询<br>
+        </p>
+        <div class="container">
+            <div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+                <div>
+                    <span>拓展功能模块一</span>
+                    <img src="assets/icon1.png">
+                    <h2>pixiv作品查询 + 一键上传</h2>
+                </div>
+            </div>
+            <div class="serviceBx" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+                <div>
+                    <span>拓展功能模块二</span>
+                    <img src="assets/icon2.png">
+                    <h2>动漫自动化追番</h2>
+                </div>
+            </div>
+            <div class="serviceBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
+                <div>
+                    <span>拓展功能模块三</span>
+                    <img src="assets/icon3.png">
+                    <h2>qbittorrent webui api 支持可视化查询上传任务&添加种子&任务自动推送</h2>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Technology -->
+    <section class="technology">
+        <div class="contentBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+            <h2 class="heading">下一步开发计划</h2>
+            <p class="text">
+                <li style="color: #fff;">批量重命名项目（支持正则表达式）</li>
+                <li style="color: #fff;">分离目录列表与服务端上传模块，支持动态部署服务端上传节点</li>
+                <li style="color: #fff;">多网盘备份之间的备份计划</li>
+            </p>
+        </div>
+        <div class="imgBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
+            <img src="assets/tech.png">
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer">
+        <p class="text">Contact email: countra@qq.com</p>
+        <ul>
+            <p class="text">@Author : CountRa </p>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </section>
+    <script src="skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+</body>
+
+</html>
